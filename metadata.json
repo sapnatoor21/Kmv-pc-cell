@@ -1,0 +1,6 @@
+{
+  "name": "KMV Placement Cell",
+  "description": "Comprehensive university placement portal for Kanya Maha Vidyalaya students, recruiters, and placement coordinators featuring placement drives, resume builder, mock interviews, aptitude tests, and real-time tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

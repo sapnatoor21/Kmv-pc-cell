@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --kmv-primary: #0D6EFD;
+    --kmv-navy: #102B50;
+    --kmv-blue-dark: #2563EB;
+    --kmv-bg: #F3F7FC;
+    --kmv-card: #FFFFFF;
+    --kmv-border: #DCE8F7;
+    --kmv-text: #16345C;
+    --kmv-muted: #6B85A8;
+  }
+
+  body {
+    background-color: var(--kmv-bg);
+    color: var(--kmv-text);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F7FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Print utilities for resume builder */
+@media print {
+  body {
+    background: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}
